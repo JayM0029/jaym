@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Nag-set sa character encoding sa dokumento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Nag-set sa viewport para sa responsive design -->
+    <title>Symptom DSS</title> <!-- Title sa webpage -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Nag-link sa external CSS file para sa styling -->
+</head>
+
+<body>
+    <div class="container"> <!-- Container para sa mga elemento sa webpage -->
+        <img src="image/logo.png" alt="Symptom Tracker Logo"> <!-- Logo sa application -->
+        
+        <label for="symptom">Choose a symptom:</label> <!-- Label para sa sintomas -->
+        <select id="symptom" required> <!-- Dropdown para sa pagpili sa sintomas -->
+            <option value="" disabled selected>--Choose a symptom--</option> <!-- Placeholder option -->
+            <option value="fever">Fever</option> <!-- Option para sa hilanat -->
+            <option value="cough">Cough</option> <!-- Option para sa ubo -->
+            <option value="runny_nose">Runny Nose</option> <!-- Option para sa runny nose -->
+            <option value="sore_throat">Sore Throat</option> <!-- Option para sa sore throat -->
+            <option value="body_aches">Body Aches</option> <!-- Option para sa body aches -->
+            <option value="headache">Headache</option> <!-- Option para sa headache -->
+            <option value="diarrhea">Diarrhea</option> <!-- Option para sa diarrhea -->
+            <option value="nausea">Nausea and Vomiting</option> <!-- Option para sa nausea -->
+            <option value="fatigue">Fatigue</option> <!-- Option para sa fatigue -->
+            <option value="skin_rashes">Skin Rashes</option> <!-- Option para sa skin rashes -->
+            <option value="dizziness">Dizziness</option> <!-- Option para sa dizziness -->
+            <option value="loss_of_appetite">Loss of Appetite</option> <!-- Option para sa loss of appetite -->
+            <option value="difficulty_breathing">Difficulty Breathing</option> <!-- Option para sa difficulty breathing -->
+            <option value="chest_pain">Chest Pain</option> <!-- Option para sa chest pain -->
+            <option value="persistent_high_fever">Persistent High Fever</option> <!-- Option para sa persistent high fever -->
+        </select>
+
+        <label for="duration">Choose duration (days):</label> <!-- Label para sa gidugayon -->
+        <select id="duration" required> <!-- Dropdown para sa pagpili sa gidugayon -->
+            <option value="" disabled selected>--Choose a duration--</option> <!-- Placeholder option -->
+            <option value="1">1</option> <!-- Option para sa 1 ka adlaw -->
+            <option value="2">2</option> <!-- Option para sa 2 ka adlaw -->
+            <option value="3">3</option> <!-- Option para sa 3 ka adlaw -->
+            <option value="4">4</option> <!-- Option para sa 4 ka adlaw -->
+            <option value="5">5</option> <!-- Option para sa 5 ka adlaw -->
+            <option value="6">6</option> <!-- Option para sa 6 ka adlaw -->
+            <option value="7">7</option> <!-- Option para sa 7 ka adlaw -->
+            <option value="8">8</option> <!-- Option para sa 8 ka adlaw -->
+            <option value="9">9</option> <!-- Option para sa 9 ka adlaw -->
+            <option value="10">10</option> <!-- Option para sa 10 ka adlaw -->
+        </select>
+
+        <label for="severity">Choose severity:</label> <!-- Label para sa severity -->
+        <select id="severity" required> <!-- Dropdown para sa pagpili sa severity -->
+            <option value="" disabled selected>--Choose a severity--</option> <!-- Placeholder option -->
+            <option value="mild">Mild</option> <!-- Option para sa mild nga severity -->
+            <option value="moderate">Moderate</option> <!-- Option para sa moderate nga severity -->
+            <option value="severe">Severe</option> <!-- Option para sa severe nga severity -->
+        </select>
+
+        <button type="button" onclick="showAdvice()">Get Advice</button> <!-- Button para sa pagkuha sa tambag -->
+
+        <div id="advice"></div> <!-- Div para sa pag-display sa tambag -->
+        <div id="medicine"></div> <!-- Div para sa pag-display sa rekomendadong medisina -->
+
+        <footer> <!-- Footer section -->
+            Members:<br> <!-- Label para sa mga miyembro -->
+            Jhon Mark Paculba<br> <!-- Ngalan sa miyembro -->
+            Evangeline Alarbe<br> <!-- Ngalan sa miyembro -->
+            Queenie Galindo<br> <!-- Ngalan sa miyembro -->
+            Ian Quimno <!-- Ngalan sa miyembro -->
+        </footer>
+    </div>
+</body>
+</html>
+<script src="js/script.js"></script>
